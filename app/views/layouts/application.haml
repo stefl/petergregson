@@ -24,8 +24,8 @@
     = favicon_tag '/favicon.ico'
     %script{:src=>"/assets/modernizr.js",:type=>"text/javascript"}
   
-    <script type="text/javascript" src="http://use.typekit.com/sla1ora.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>    
+    <script type="text/javascript" src="http://use.typekit.com/vad4tlb.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>  
     
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
@@ -35,33 +35,18 @@
     .page
       %header#header          
         %h1#logo
-          %a{:title=>"Sketching with code", :href=>"/"} Sketching with Code
-        %h2
-          Culture, hack days and what happens next…
+          %a{:title=>"Peter Gregson", :href=>"/"} Peter Gregson
       %section.content
         = yield
-      %nav  
+      %footer  
         %p
           By 
           %a{:href=>"http://stef.io"} Stef
-          with some support from 
-          %a{:href=>"http://cloreleadership.org"} Clore
-          and 
-          = succeed(".") do
-            %a{:href=>"http://nesta.org.uk"} Nesta
-        %p
-          With
-          %a{:href=>"/thanks"} thanks
-          to everyone who's helped.
 
         %p
           %span#follow_button
-            <a href="https://twitter.com/stef" class="twitter-follow-button" data-button="grey" data-text-color="#FFFFFF" data-link-color="#FFFFFF" data-show-count="false">Follow @stef</a>
-
-      
-      %footer
-        
-          
+            %a{:href=>"https://twitter.com/#{PeterGregson.twitter_user}", :class=>"twitter-follow-button", :"data-button" => "grey", :"data-text-color" => "#FFFFFF", :"data-link-color" => "#FFFFFF", :"data-show-count" => "false"} 
+              = "Follow @#{PeterGregson.twitter_user}"        
         
   = yield_content :scripts
   %script{:src=>"//platform.twitter.com/widgets.js", :charset=>"utf-8", :type=>"text/javascript"}

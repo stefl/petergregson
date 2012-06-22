@@ -19,7 +19,10 @@ $media-layout: 60em 12 30em;// Same. Larger length will always be max-width.
 $media-layout: 12 lt-ie9;  // Output is included under `.lt-ie9` class,
 $container-style: magic;
 $background-color: #f8faf4;
-$link-color:   #8a4945;
+$link-color:   #2255aa;
+
+$title-face: "freight-sans-pro", "Helvetica Neue", Helvetica, sans-serif;
+$body-face: "ff-meta-serif-web-pro", serif;
 
 @import "susy";
 
@@ -37,7 +40,7 @@ body {
 }
 
 .page { 
-  font-family: "ff-tisa-web-pro",serif;
+  font-family: $body-face;
   @include container; 
 
   header{ 
@@ -78,7 +81,7 @@ body {
 
 h1 {
   @include adjust-font-size-to($base-font-size * 2, $lines:2);
-  font-family: "ratio", sans-serif;
+  font-family: $title-face;
   font-weight: 100;
   @include at-breakpoint(60em 12) { 
     @include adjust-font-size-to($base-font-size * 3, $lines:2);
@@ -90,15 +93,15 @@ header#header {
     &#logo {
       @include adjust-font-size-to($base-font-size * 4, $lines:2);
       text-align: center;
-      font-family: "learning-curve-dashed", cursive;
-      font-weight: normal;
+      font-family: $title-face;
+      font-weight: lighter;
       @include at-breakpoint(60em 12) { 
         @include adjust-font-size-to($base-font-size * 8, $lines:4);
       }
     }
   }
   h2 {
-    font-family: "ratio", sans-serif;
+    font-family: $title-face;
     font-weight: 200;
     @include adjust-font-size-to($base-font-size * 1, $lines:1);
     text-weight: light;

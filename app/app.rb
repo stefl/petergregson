@@ -5,6 +5,11 @@ class PeterGregson < Padrino::Application
 
   enable :sessions
 
+  configure do
+    set :lanyrd_user, ENV["PG_LANYRD_USER"] || "petergregson"
+    set :twitter_user, ENV["PG_TWITTER_USER"] || "petergregson"
+  end
+
   ##
   # Caching support
   #

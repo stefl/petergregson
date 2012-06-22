@@ -17,3 +17,4 @@ gem 'sass-on-heroku'
 gem 'padrino-sprockets', :require => 'padrino/sprockets', :git => "git://github.com/stefl/padrino-sprockets.git", :branch => "patch-1"
 gem 'execjs'
 gem 'therubyracer', :platforms => :ruby
+gem 'nokogiri'

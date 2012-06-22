@@ -1,0 +1,12 @@
+%p
+  is a cellist and composer.
+- @statuses.each do |status|
+  %p  
+    - if status.happening_at == Date.today
+      is
+    - else
+      will be
+    = status.phrase
+    = link_to status.thing, status.thing_url
+    = succeed(".") do
+      = status.description

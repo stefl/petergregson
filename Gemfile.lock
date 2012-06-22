@@ -75,6 +75,7 @@ GEM
       tzinfo (~> 0.3.22)
     multi_json (1.2.0)
     multipart-post (1.1.5)
+    nokogiri (1.5.0)
     padrino (0.10.5)
       padrino-admin (= 0.10.5)
       padrino-cache (= 0.10.5)
@@ -161,6 +162,7 @@ DEPENDENCIES
   haml
   jekyll!
   mongoid
+  nokogiri
   padrino (= 0.10.5)
   padrino-sprockets!
   rake
