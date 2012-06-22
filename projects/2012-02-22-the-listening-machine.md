@@ -1,6 +1,6 @@
 Title: The Listening Machine
 
-The Listening Machine was commissioned by The Arts Council for the BBC’s ambitious [The Space](http://thespace.org) project, and runs for the full duration – May - October 31st, 2012.
+[The Listening Machine](www.thelisteningmachine.org) was commissioned by The Arts Council for the BBC’s ambitious [The Space](http://thespace.org) project, and runs for the full duration – May - October 31st, 2012.
 
 Britten Sinfonia is one of Europe’s most pioneering chamber orchestras. Renowned for its diverse artistic collaborations and its ambitious new music commissions, the orchestra performs regularly in some of the finest venues in the UK and worldwide. Britten Sinfonia is a BBC Radio 3 Broadcast Partner.
 
