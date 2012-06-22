@@ -36,6 +36,13 @@
       %header#header          
         %h1#logo
           %a{:title=>"Peter Gregson", :href=>"/"} Peter Gregson
+      %section#nav
+        %nav
+          %ul
+            %li
+              = link_to "Now and next", url_for(:statuses, :index)
+            %li
+              = link_to "Projects", url_for(:projects, :index)
       %section.content
         = yield
       %footer  

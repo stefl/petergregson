@@ -1,0 +1,7 @@
+%section#projects
+- @projects.each do |project|
+  .project{:"style"=>("background-image: url(#{url_for(:projects, :image, :slug => project.slug)})" unless project.image.blank?)}
+    %h2
+      %a{:href=>url_for(:projects, :show, :slug => project.slug)}
+        %span
+          = project.title

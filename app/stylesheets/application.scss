@@ -22,7 +22,8 @@ $background-color: #f8faf4;
 $link-color:   #2255aa;
 
 $title-face: "freight-sans-pro", "Helvetica Neue", Helvetica, sans-serif;
-$body-face: "ff-meta-serif-web-pro", serif;
+$body-face: "freight-sans-pro", "Helvetica Neue", Helvetica, sans-serif;
+//$body-face: "ff-meta-serif-web-pro", serif;
 
 @import "susy";
 
@@ -68,12 +69,7 @@ body {
   }
   
   @include at-breakpoint(60em 12) { 
-    nav { 
-      @include span-columns(2,12); 
-      @include omega();
-    }
     .content { 
-      @include prefix(2);
       @include span-columns(8,12);
     }
   }
@@ -91,13 +87,13 @@ h1 {
 header#header {
   h1 {
     &#logo {
-      @include adjust-font-size-to($base-font-size * 4, $lines:2);
-      text-align: center;
+      @include adjust-font-size-to($base-font-size * 2, $lines:2);
       font-family: $title-face;
       font-weight: lighter;
       @include at-breakpoint(60em 12) { 
-        @include adjust-font-size-to($base-font-size * 8, $lines:4);
+        @include adjust-font-size-to($base-font-size * 2, $lines:2);
       }
+      @include trailer(0);
     }
   }
   h2 {
@@ -142,6 +138,16 @@ article {
   }
 }
 
+h2 {
+  @include adjust-font-size-to($base-font-size * 2, $lines:2);
+  @include trailer(1);
+}
+
+h1 {
+  @include adjust-font-size-to($base-font-size * 2, $lines:2);
+  @include trailer(1);
+}
+
 p {
   &:first-child {
     @include leader;  
@@ -172,6 +178,37 @@ ul.twitter_users {
   }
 }
 
-img.full-width {
-  width: 100%;
+#projects {
+  .project {
+    background-color: #777;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    h2 {
+      color: white;
+      a {
+        height: $base-line-height * 8;
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+        display: block;
+        @include text-shadow(rgba(0,0,0,0.5) 0px 1px 0px); 
+        span {
+          background-color: rgba(0,0,0,0.5);
+          padding-left: 0.5em;
+          padding-right: 0.5em;
+        }       
+      }
+    }
+  }
+}
+
+#project {
+  #project_image {
+    width: 100%;
+    @include trailer(1);
+  }
 }

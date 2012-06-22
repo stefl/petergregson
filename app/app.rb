@@ -8,6 +8,7 @@ class PeterGregson < Padrino::Application
   configure do
     set :lanyrd_user, ENV["PG_LANYRD_USER"] || "petergregson"
     set :twitter_user, ENV["PG_TWITTER_USER"] || "petergregson"
+    set :markdown_file_extensions, ["md"]
   end
 
   ##

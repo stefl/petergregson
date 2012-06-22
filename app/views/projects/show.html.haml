@@ -1,0 +1,6 @@
+%section#project
+  %h1
+    = @project.title
+  - unless @project.image.blank?
+    %img#project_image{:src=>url_for(:projects, :image, :slug => @project.slug)}
+  = @project.content_html

@@ -1,4 +1,7 @@
 source :rubygems
+gem 'activerecord'
+gem 'activemodel'
+gem 'activesupport'
 gem 'rake'
 gem 'sinatra-flash', :require => 'sinatra/flash'
 gem 'sass'
@@ -18,3 +21,5 @@ gem 'padrino-sprockets', :require => 'padrino/sprockets', :git => "git://github.
 gem 'execjs'
 gem 'therubyracer', :platforms => :ruby
 gem 'nokogiri'
+gem 'rdiscount'
+gem 'hashie'
